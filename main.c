@@ -1,11 +1,8 @@
 #include <stdio.h>
 
-void initializeVector(int m, int n, int matrix[m][n], int currentPosBySet[m]) {
+void initializeVector(int m, int currentPosBySet[m]) {
     for (int i = 0; i < m; i++) {
         currentPosBySet[i] = 0;
-        for (int j = 0; j < n; j++) {
-            matrix[i][j] = 0;
-        }
     }
 }
 
